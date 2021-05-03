@@ -1,0 +1,161 @@
+/* Variables and default styles*/
+:root {
+    --headline-font: "Raleway", sans-serif;
+    --body-font: "Montserrat", sans-serif;
+    --small-text: 18px;
+    --medium-text: 24px;
+    --large-text: 2em;
+    --x-large-text: 2.5em;
+    --blue: #4a90e2;
+    --grey: #F2F2F2;
+    --default-color: #000;
+    --light-font: lighter;
+}
+
+* {
+    box-sizing: border-box;
+    font-weight: var(--light-font);
+}
+
+body {
+    color: var(--default-color);
+    font-family: var(--body-font);
+    margin: 10px;
+    text-align: center;
+    font-size: var(--small-text);
+    font-weight: var(--light-font);
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--default-color);
+    text-decoration: none;
+}
+
+.accent-color {
+    color: var(--blue);
+}
+
+/* Header styles */
+header {
+    font-family: var(--headline-font);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home {
+    font-size: var(--large-text);
+}
+
+.page-sections {
+    width: 30%;
+display: flex;
+justify-content: space-evenly;
+}
+
+.page-sections a:hover {
+    color: var(--blue);
+}
+
+.hamburger-icon {
+    display: none
+}
+
+/* Section: top styles */
+
+.top {
+    margin: 7em 0;
+}
+
+h1 {
+    font-size: var(--x-large-text);
+    font-family: var(--headline-font);
+    font-weight: var(--light-font);
+}
+
+.subtitle {
+    font-size: var(--medium-text);
+    font-family: var(--headline-font); 
+}
+
+/* Section: projects styles */
+
+.project-grid {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 30%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 10px;
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-button {
+    background-color: var(--grey);
+/*     box-shadow: 0px 2px 30px 0px rgba(130.62499237060547,128.15447274415408,128.15447274415408,.5);
+ */    border: none;
+    border-radius: 10px;
+    color: #000;
+    width: 48%;
+    padding: 10px 0;
+    margin: 3% 0;
+    font-weight: var(--light-font);
+    font-size: var(--small-text);
+}
+
+.project-button:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+/* Section: Tools styles */
+
+.logo-grid {
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.logo-card {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    background-color: var(--grey);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.logo-img {
+    width: 60%;
+    margin: 0 auto;
+    height: 60%;
+    align-self: center;
+}
+
+@media (max-width: 1000px) {
+/*     .project-grid {
+
+    } */
+    .project {
+        margin: 0;
+        width: 100%
+    }
+}
