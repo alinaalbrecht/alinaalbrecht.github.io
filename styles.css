@@ -1,161 +1,257 @@
 /* Variables and default styles*/
 :root {
-    --headline-font: "Raleway", sans-serif;
-    --body-font: "Montserrat", sans-serif;
-    --small-text: 18px;
-    --medium-text: 24px;
-    --large-text: 2em;
-    --x-large-text: 2.5em;
-    --blue: #4a90e2;
-    --grey: #F2F2F2;
-    --default-color: #000;
-    --light-font: lighter;
+  --headline-font: "Raleway", sans-serif;
+  --body-font: "Montserrat", sans-serif;
+  --small-text: 16px;
+  --medium-text: 18px;
+  --medium-large-text: 24px;
+  --large-text: 2em;
+  --x-large-text: 2.5em;
+  --blue: #4a90e2;
+  --grey: #f2f2f2;
+  --yellow: #febe00;
+  --default-color: #000;
+  --light-font: lighter;
+  --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 * {
-    box-sizing: border-box;
-    font-weight: var(--light-font);
+  box-sizing: border-box;
 }
 
 body {
-    color: var(--default-color);
-    font-family: var(--body-font);
-    margin: 10px;
-    text-align: center;
-    font-size: var(--small-text);
-    font-weight: var(--light-font);
-    width: 90%;
-    margin: 0 auto;
+  color: var(--default-color);
+  font-family: var(--body-font);
+  margin: 10px;
+  text-align: center;
+  font-size: var(--small-text);
+  width: 90%;
+  margin: 0 auto;
 }
 
 a {
-    color: var(--default-color);
-    text-decoration: none;
+  color: var(--default-color);
+  text-decoration: none;
 }
 
 .accent-color {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 /* Header styles */
 header {
-    font-family: var(--headline-font);
+  font-family: var(--headline-font);
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  background-color: #fff;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .home {
-    font-size: var(--large-text);
+  font-size: var(--large-text);
 }
 
 .page-sections {
-    width: 30%;
-display: flex;
-justify-content: space-evenly;
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .page-sections a:hover {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 .hamburger-icon {
-    display: none
+  display: none;
 }
 
 /* Section: top styles */
 
 .top {
-    margin: 7em 0;
+  margin: 7em 0;
 }
 
 h1 {
-    font-size: var(--x-large-text);
-    font-family: var(--headline-font);
-    font-weight: var(--light-font);
+  font-size: var(--x-large-text);
+  font-family: var(--headline-font);
+  font-weight: lighter;
 }
 
 .subtitle {
-    font-size: var(--medium-text);
-    font-family: var(--headline-font); 
+  font-size: var(--medium-large-text);
+  font-family: var(--headline-font);
 }
 
 /* Section: projects styles */
 
 .project-grid {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project {
-    width: 30%;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
-margin: 10px;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
 }
 
 .project-image {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .project-button {
-    background-color: var(--grey);
-/*     box-shadow: 0px 2px 30px 0px rgba(130.62499237060547,128.15447274415408,128.15447274415408,.5);
- */    border: none;
-    border-radius: 10px;
-    color: #000;
-    width: 48%;
-    padding: 10px 0;
-    margin: 3% 0;
-    font-weight: var(--light-font);
-    font-size: var(--small-text);
+  background-color: var(--grey);
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  /* width: 48%; */
+  padding: 10px 0;
+  margin: 3% 0;
+  font-size: var(--medium-text);
+}
+
+.project-button--third-width {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project-button--half-width {
+  width: 48%;
+}
+
+.project-button--full-width {
+  width: 100%;
 }
 
 .project-button:hover {
-    background-color: var(--blue);
-    color: #fff;
+  background-color: var(--blue);
+  color: #fff;
 }
 
 /* Section: Tools styles */
 
 .logo-grid {
-    display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .logo-card {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    background-color: var(--grey);
-    border-radius: 10px;
-    margin: 5px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  background-color: var(--grey);
+  border-radius: 10px;
+  margin: 5px;
 }
 
 .logo-img {
-    width: 60%;
-    margin: 0 auto;
-    height: 60%;
-    align-self: center;
+  width: 60%;
+  margin: 0 auto;
+  height: 60%;
+  align-self: center;
+}
+
+/* footer styles */
+footer {
+  background-color: var(--grey);
+  padding: 30px 0;
+  margin-top: 30px;
+}
+
+footer a:hover {
+  color: var(--blue);
+}
+
+.footer-icon {
+  font-size: 30px;
+  margin: 5px;
+}
+
+/* Savvie case study styles */
+
+.header-image {
+  width: 100%;
+  margin-top: 3em;
+}
+
+img {
+  width: 100%;
+}
+
+.intro {
+  text-align: left;
+}
+
+.case-study-grid {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.case-study-grid__text,
+.case-study-grid__image {
+  width: 48%;
+  padding: 2%;
+}
+
+.case-study-grid__full-width-element {
+  padding: 2%;
+}
+
+.emphasis-shadow {
+  box-shadow: var(--shadow);
+}
+
+.accent-color--savvie {
+  color: var(--yellow);
+}
+strong {
+  background-color: var(--yellow);
 }
 
 @media (max-width: 1000px) {
-/*     .project-grid {
+  .project {
+    margin: 0;
+    width: 100%;
+  }
 
-    } */
-    .project {
-        margin: 0;
-        width: 100%
-    }
+  .case-study-grid__text,
+  .case-study-grid__image {
+    width: 100%;
+    border-bottom: 1px solid var(--grey);
+  }
+}
+
+@media (max-width: 640px) {
+  .top {
+    margin: 7em 0 0 0;
+  }
+  .home {
+    font-size: var(--medium-large-text);
+  }
+  h1 {
+    font-size: var(--large-text);
+  }
+  .subtitle {
+    font-size: var(--medium-text);
+  }
 }
