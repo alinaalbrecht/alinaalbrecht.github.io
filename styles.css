@@ -9,9 +9,9 @@
 :root {
   --headline-font: "Raleway", sans-serif;
   --body-font: "Montserrat", sans-serif;
-  --small-text: 16px;
-  --medium-text: 18px;
-  --medium-large-text: 24px;
+  --small-text: 1em;
+  --medium-text: 1.1em;
+  --medium-large-text: 1.5em;
   --large-text: 2em;
   --x-large-text: 2.5em;
   --blue: #4a90e2;
@@ -40,6 +40,14 @@ body {
 a {
   color: var(--default-color);
   text-decoration: none;
+}
+
+h3 {
+  font-size: var(--medium-large-text);
+}
+
+h2 {
+  font-size: var(--medium-text);
 }
 
 .accent-color {
@@ -249,6 +257,7 @@ img {
 
 .intro {
   text-align: left;
+  /*  width: 50%; */
 }
 
 .case-study-grid {
