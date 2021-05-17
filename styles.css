@@ -323,4 +323,7 @@ strong {
     .subtitle {
       font-size: var(--medium-text);
     } */
+  .project-button {
+    font-size: var(--medium-large-text);
+  }
 }
