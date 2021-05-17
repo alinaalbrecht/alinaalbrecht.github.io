@@ -314,9 +314,9 @@ strong {
   .top {
     margin: 7em 0 0 0;
   }
-  :root {
+  /*   :root {
     --small-text: 1.1em;
-  }
+  } */
   /*     .home {
       font-size: var(--medium-large-text);
     }
