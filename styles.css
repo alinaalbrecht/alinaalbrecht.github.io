@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Variables and default styles*/
 :root {
   --headline-font: "Raleway", sans-serif;
@@ -16,6 +23,7 @@
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -49,8 +57,14 @@ header {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -60,7 +74,11 @@ nav {
 
 .page-sections {
   width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
@@ -93,17 +111,33 @@ h1 {
 
 .project-grid {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .project {
   width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 10px;
 }
@@ -146,15 +180,25 @@ h1 {
 /* Section: Tools styles */
 
 .logo-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .logo-card {
   width: 100px;
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: var(--grey);
   border-radius: 10px;
@@ -165,6 +209,8 @@ h1 {
   width: 60%;
   margin: 0 auto;
   height: 60%;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
 }
 
@@ -200,10 +246,17 @@ img {
 }
 
 .case-study-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   text-align: left;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -218,6 +271,7 @@ img {
 }
 
 .emphasis-shadow {
+  -webkit-box-shadow: var(--shadow);
   box-shadow: var(--shadow);
 }
 
@@ -245,13 +299,13 @@ strong {
   .top {
     margin: 7em 0 0 0;
   }
-  .home {
-    font-size: var(--medium-large-text);
-  }
-  h1 {
-    font-size: var(--large-text);
-  }
-  .subtitle {
-    font-size: var(--medium-text);
-  }
+  /*     .home {
+      font-size: var(--medium-large-text);
+    }
+    h1 {
+      font-size: var(--large-text);
+    }
+    .subtitle {
+      font-size: var(--medium-text);
+    } */
 }
