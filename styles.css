@@ -297,6 +297,11 @@ strong {
   background-color: var(--yellow);
 }
 
+/* Property Hero Styles */
+.accent-color--property-hero {
+  color: #006aec;
+}
+
 @media (max-width: 1000px) {
   .project {
     margin: 0;
