@@ -37,6 +37,11 @@ body {
   margin: 0 auto;
 }
 
+.fa, .fas {
+  font-weight: 900;
+  font-size: var(--medium-text);
+}
+
 a {
   color: var(--default-color);
   text-decoration: none;
