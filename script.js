@@ -28,11 +28,13 @@ sections.forEach((section) =>
 );
 
 function toggleMenu() {
-  let expandedMenu = document.querySelector(".page-sections");
-  expandedMenu.style.display === "none"
-    ? (expandedMenu.style.display = "flex")
-    : (expandedMenu.style.display = "none");
-  expandedMenu.classList.add("hamburger-menu");
+  if (screen.width <= 1000) {
+    let expandedMenu = document.querySelector(".page-sections");
+    expandedMenu.style.display === "none"
+      ? (expandedMenu.style.display = "flex")
+      : (expandedMenu.style.display = "none");
+    expandedMenu.classList.add("hamburger-menu");
+  }
 }
 
 //append footer
