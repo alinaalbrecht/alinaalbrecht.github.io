@@ -8,8 +8,8 @@ const header = (() => {
         </div>
         <div class="page-sections">
             <a data-type='page-section' href="index.html#projects">Projects</a>
-            <a data-type='page-section' href="#tools">Tools</a>
-            <a data-type='page-section' href="#contact">Contact</a>
+            <a data-type='page-section' href="index.html#tools">Tools</a>
+            <a data-type='page-section' href="index.html#contact">Contact</a>
         </div>
         </nav>
         <div class="hamburger-icon">
