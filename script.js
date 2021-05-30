@@ -1,3 +1,4 @@
+//append header
 const header = (() => {
   let header = document.querySelector("header");
   header.innerHTML = `
@@ -6,9 +7,9 @@ const header = (() => {
             <a href="index.html#home">Alina <span class="accent-color">Albrecht</span></a>
         </div>
         <div class="page-sections">
-            <a href="index.html#projects">Projects</a>
-            <a href="#tools">Tools</a>
-            <a href="#contact">Contact</a>
+            <a data-type='page-section' href="index.html#projects">Projects</a>
+            <a data-type='page-section' href="#tools">Tools</a>
+            <a data-type='page-section' href="#contact">Contact</a>
         </div>
         </nav>
         <div class="hamburger-icon">
@@ -17,6 +18,24 @@ const header = (() => {
     `;
 })();
 
+//Hamburger menu
+const hamburgerIcon = document.querySelector(".hamburger-icon");
+hamburgerIcon.addEventListener("click", () => setTimeout(toggleMenu, 300));
+
+const sections = [...document.querySelectorAll("[data-type='page-section']")];
+sections.forEach((section) =>
+  section.addEventListener("click", () => setTimeout(toggleMenu, 300))
+);
+
+function toggleMenu() {
+  let expandedMenu = document.querySelector(".page-sections");
+  expandedMenu.style.display === "none"
+    ? (expandedMenu.style.display = "flex")
+    : (expandedMenu.style.display = "none");
+  expandedMenu.classList.add("hamburger-menu");
+}
+
+//append footer
 const footer = (() => {
   let footer = document.querySelector("footer");
   footer.innerHTML = `
