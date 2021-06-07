@@ -433,6 +433,9 @@ strong {
     } */
 
 @media (max-width: 640px) {
+  .project__background {
+    height: 60vw;
+  }
   .logo-grid__logo-img {
     max-width: 50px;
     margin: 0 10px;
