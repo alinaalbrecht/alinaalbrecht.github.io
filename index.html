@@ -9,8 +9,9 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Raleway:wght@100;200;300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Vidaloka&display=swap"
       rel="stylesheet"
     />
     <script
@@ -22,174 +23,249 @@
   <body id="home">
     <header></header>
     <main>
-      <section class="top">
-        <h1>Hi, my name is Alina</h1>
-        <p class="subtitle">I'm a frontend developer based in Berlin</p>
+      <section class="headline">
+        <h1 class="headline__title">Hi, my name is Alina</h1>
+        <p class="headline__subtitle">
+          I'm a frontend developer based in Berlin
+        </p>
         <!-- <a href="link-test.html">test</a> -->
       </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-          <div class="project">
-            <img
-              class="project-image"
-              src="images/to-do-list.png"
-              alt="javascript to do list project"
-            />
+      <section class="projects" id="projects">
+        <h2 class="projects__title">Projects</h2>
+        <div class="projects__project-grid">
+          <div class="projects__project">
+            <div class="project__background">
+              <img
+                class="project__image"
+                src="images/to-do-list-2.png"
+                alt="javascript to do list project"
+              />
+            </div>
+            <div class="project__name">To Do List</div>
+            <div class="project__description">
+              <p>
+                Supports multiple to do list folders, allows user to change due
+                dates, and shows completed tasks. Folders and tasks are saved to
+                local storage for easier task management.
+              </p>
+              <p>
+                Built with HTML, CSS (flexbox), JavaScript (ES6 modules), and
+                Webpack.
+              </p>
+            </div>
             <a
               href="https://github.com/alinaalbrecht/to_do_list"
-              class="project-button project-button--half-width"
+              class="project__link"
               >see code</a
             >
             <a
               href="https://alinas-to-do-list.netlify.app/"
-              class="project-button project-button--half-width"
+              class="project__link"
               >see preview</a
             >
           </div>
 
-          <div class="project">
-            <img
-              class="project-image"
-              src="images/calculator.png"
-              alt="javascript calculator project"
-            />
+          <div class="projects__project">
+            <div class="project__background">
+              <img
+                class="project__image"
+                src="images/calculator-2.png"
+                alt="javascript calculator project"
+              />
+            </div>
+            <div class="project__name">Calculator</div>
+            <div class="project__description">
+              <p>
+                A simple calculator built using HTML, CSS (grid), and
+                Javascript.
+              </p>
+            </div>
             <a
               href="https://github.com/alinaalbrecht/calculator"
-              class="project-button project-button--half-width"
+              class="project__link"
               >see code</a
             >
             <a
               href="https://alinaalbrecht.github.io/calculator/"
-              class="project-button project-button--half-width"
+              class="project__link"
               >see preview</a
             >
           </div>
-          <div class="project">
-            <img
-              class="project-image"
-              src="images/etchasketch.png"
-              alt="javascript calculator project"
-            />
+          <div class="projects__project">
+            <div class="project__background">
+              <img
+                class="project__image"
+                src="images/etchasketch-2.png"
+                alt="javascript etch-a-sketch project"
+              />
+            </div>
+            <div class="project__name">Etch-A-Sketch</div>
+            <div class="project__description">
+              <p>
+                Move your mouse over the grid to create a shape. Buttons allow
+                you to clear grid and change the number of squares in the grid.
+              </p>
+              <p>
+                Built using HTML, CSS (flexbox and keyframes), and Javascript.
+              </p>
+            </div>
             <a
               href="https://github.com/alinaalbrecht/etch-a-sketch"
-              class="project-button project-button--half-width"
+              class="project__link"
               >see code</a
             >
             <a
               href="https://alinaalbrecht.github.io/etch-a-sketch/"
-              class="project-button project-button--half-width"
+              class="project__link"
               >see preview</a
             >
           </div>
-          <div class="project">
+          <!-- <div class="projects__project">
             <img
-              class="project-image"
+              class="project__image"
               src="images/library.png"
               alt="javascript calculator project"
             />
             <a
               href="https://github.com/alinaalbrecht/library-app"
-              class="project-button project-button--half-width"
+              class="project__link"
               >see code</a
             >
             <a
               href="https://alinaalbrecht.github.io/library-app/"
-              class="project-button project-button--half-width"
+              class="project__link"
               >see preview</a
             >
-          </div>
-          <div class="project">
-            <img
-              class="project-image"
-              src="images/tictactoe.png"
-              alt="javascript calculator project"
-            />
+          </div> -->
+          <div class="projects__project">
+            <div class="project__background">
+              <img
+                class="project__image"
+                src="images/tictactoe-2.png"
+                alt="javascript tic tac toe project"
+              />
+            </div>
+            <div class="project__name">Tic Tac Toe</div>
+            <div class="project__description">
+              <p>
+                Tic Tac Toe app that allows two players to enter their names and
+                alerts which player has won the game.
+              </p>
+              <p>
+                Built using HTML, CSS (grid), and Javascript (factory
+                functions).
+              </p>
+            </div>
             <a
               href="https://github.com/alinaalbrecht/tic-tac-toe"
-              class="project-button project-button--half-width"
+              class="project__link"
               >see code</a
             >
             <a
               href="https://alinaalbrecht.github.io/tic-tac-toe/"
-              class="project-button project-button--half-width"
+              class="project__link"
               >see preview</a
             >
           </div>
-          <div class="project">
-            <img
-              class="project-image"
-              src="images/donut-shop.png"
-              alt="E-Commerce shop"
-            />
+          <div class="projects__project">
+            <div class="project__background">
+              <img
+                class="project__image"
+                src="images/donut-shop-2.png"
+                alt="E-Commerce shop"
+              />
+            </div>
+            <div class="project__name">Donut Shop</div>
+            <div class="project__description">
+              <p>
+                Fictitious online donut shop built to practice using Webpack and
+                ES6 modules.
+              </p>
+            </div>
             <a
               href="https://github.com/alinaalbrecht/ecommerce-page"
-              class="project-button project-button--half-width"
+              class="project__link"
               >see code</a
             >
             <a
               href="https://alinaalbrecht.github.io/ecommerce-page/"
-              class="project-button project-button--half-width"
+              class="project__link"
               >see preview</a
             >
           </div>
-          <div class="project">
+          <!-- <div class="projects__project">
             <img
-              class="project-image"
+              class="project__image"
               src="images/savvie.png"
               alt="Savvie UX Case Study"
             />
-            <a
-              href="savvie-ux-case-study.html"
-              class="project-button project-button--full-width"
+            <a href="savvie-ux-case-study.html" class="project__link"
               >see case study</a
             >
-          </div>
-          <div class="project">
+          </div> -->
+          <!-- <div class="projects__project">
             <img
-              class="project-image"
+              class="project__image"
               src="images/property-hero.png"
               alt="Property Hero UI Case Study"
             />
-            <a
-              href="property-hero-case-study.html"
-              class="project-button project-button--full-width"
+            <a href="property-hero-case-study.html" class="project__link"
               >see case study</a
             >
-          </div>
+          </div> -->
         </div>
       </section>
-      <section id="tools">
-        <h2>My Tools</h2>
-        <h3>Languages</h3>
-        <div class="logo-grid">
-          <div class="logo-card">
-            <img class="logo-img" src="images/logos/html-logo.svg" alt="" />
-          </div>
-          <div class="logo-card">
-            <img class="logo-img" src="images/logos/css-logo.svg" alt="" />
-          </div>
-          <div class="logo-card">
-            <img
-              class="logo-img"
-              src="images/logos/javascript-logo.svg"
-              alt=""
-            />
-          </div>
+      <section class="tools" id="tools">
+        <h2 class="tools__title">My Tools</h2>
+        <h3 class="tools__sub-title">Languages</h3>
+        <div class="tools__logo-grid">
+          <img
+            class="logo-grid__logo-img"
+            src="images/logos/html-logo.svg"
+            alt=""
+          />
+
+          <img
+            class="logo-grid__logo-img"
+            src="images/logos/css-logo.svg"
+            alt=""
+          />
+
+          <img
+            class="logo-grid__logo-img"
+            src="images/logos/javascript-logo.svg"
+            alt=""
+          />
         </div>
         <!--         <h3>Libraries and Frameworks</h3>
         <div class="logo-grid"></div> -->
-        <h3>Other Web Technologies</h3>
-        <div class="logo-grid">
-          <div class="logo-card">
-            <img class="logo-img" src="images/logos/npm-logo.svg" alt="" />
-          </div>
-          <div class="logo-card">
-            <img class="logo-img" src="images/logos/figma-logo.svg" alt="" />
-          </div>
-          <div class="logo-card">
-            <img class="logo-img" src="images/logos/sketch-logo.svg" alt="" />
-          </div>
+        <h3 class="tools__sub-title">Other Web Technologies</h3>
+        <div class="tools__logo-grid">
+          <img
+            class="logo-grid__logo-img"
+            src="images/logos/npm-logo.svg"
+            alt=""
+          />
+
+          <img
+            class="logo-grid__logo-img"
+            src="images/logos/figma-logo.svg"
+            alt=""
+          />
+
+          <img
+            class="logo-grid__logo-img"
+            src="images/logos/sketch-logo.svg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="about-me" id="about-me">
+        <img class="about-me__img" src="images/profile-image.png" alt="" />
+        <div class="about-me__description">
+          I'm a frontend developer currently working at tink GmbH. In my free
+          time I like to read, tend to my plants, and learn full stack
+          JavaScript and Java.
         </div>
       </section>
     </main>
