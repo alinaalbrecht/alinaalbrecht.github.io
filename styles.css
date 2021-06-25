@@ -445,9 +445,7 @@ strong {
     z-index: 1;
     padding-right: 20px;
   }
-  .header__page-sections {
-    display: none;
-  }
+
   .hamburger-menu {
     width: 100%;
     display: -webkit-box;
@@ -466,6 +464,8 @@ strong {
     -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     line-height: 2;
+    left: 0;
+    right: 0;
   }
 }
 

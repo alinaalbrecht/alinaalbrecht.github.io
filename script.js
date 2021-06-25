@@ -21,20 +21,21 @@ const header = (() => {
 
 //Hamburger menu
 const hamburgerIcon = document.querySelector(".header__hamburger-icon");
-hamburgerIcon.addEventListener("click", () => setTimeout(toggleMenu, 300));
+hamburgerIcon.addEventListener("click", toggleMenu);
 
 const sections = [...document.querySelectorAll("[data-type='page-section']")];
-sections.forEach((section) =>
-  section.addEventListener("click", () => setTimeout(toggleMenu, 300))
-);
-
+sections.forEach((section) => section.addEventListener("click", toggleMenu));
+let expandedMenu = document.querySelector(".header__page-sections");
+expandedMenu.style.display = "none";
 function toggleMenu() {
   if (screen.width <= 1000) {
-    let expandedMenu = document.querySelector(".header__page-sections");
-    expandedMenu.style.display === "none"
-      ? (expandedMenu.style.display = "flex")
-      : (expandedMenu.style.display = "none");
-    expandedMenu.classList.add("hamburger-menu");
+    if (expandedMenu.style.display === "none") {
+      expandedMenu.style.display = "flex";
+      expandedMenu.classList.add("hamburger-menu");
+    } else if ((expandedMenu.style.display = "flex")) {
+      expandedMenu.style.display = "none";
+      expandedMenu.classList.remove("hamburger-menu");
+    }
   }
 }
 
