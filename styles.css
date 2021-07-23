@@ -3,6 +3,7 @@
   --headline-font: "Vidaloka", serif;
   --body-font: "Raleway", sans-serif;
   --small-text: 16px;
+  --medium-small-text: 18px;
   --medium-text: 20px;
   --medium-large-text: 24px;
   --large-text: 30px;
@@ -214,8 +215,9 @@ section {
 .project__link {
   color: var(--blue);
   margin-top: 10px;
-  font-size: var(--small-text);
+  font-size: var(--medium-small-text);
   font-weight: var(--regular-weight);
+  font-family: var(--headline-font);
 }
 
 .project__link::after {

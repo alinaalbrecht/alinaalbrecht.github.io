@@ -26,7 +26,18 @@ hamburgerIcon.addEventListener("click", toggleMenu);
 const sections = [...document.querySelectorAll("[data-type='page-section']")];
 sections.forEach((section) => section.addEventListener("click", toggleMenu));
 let expandedMenu = document.querySelector(".header__page-sections");
-expandedMenu.style.display = "none";
+
+// hide menu items conditionally based on screen size
+function hideMenuItems() {
+  if (screen.width <= 1000) {
+    expandedMenu.style.display = "none";
+  } else {
+    expandedMenu.style.display = "flex";
+  }
+}
+window.addEventListener("resize", hideMenuItems);
+window.addEventListener("load", hideMenuItems);
+
 function toggleMenu() {
   if (screen.width <= 1000) {
     if (expandedMenu.style.display === "none") {
